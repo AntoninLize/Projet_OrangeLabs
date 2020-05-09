@@ -54,7 +54,7 @@ Notre projet a pour objectif de construire un robot patrouilleur pour explorer u
 \end{itemize}\\
 
 
-Pour bien comprendre tous les enjeux de ce projet nous avons eu besoin d’effectuer plusieurs conférences téléphoniques avec Mr CHODOROWSKI qui ont donné lieu à plusieurs rencontres à l’ENSTA afin d’aborder de façon plus détaillée certains points. Ces rencontres nous ont permis de bien définir le projet dans sa globalité et ainsi pouvoir réaliser un cahier des charges fonctionnels que ce soit pour le robot ou pour la station de recharge.\\
+Pour bien comprendre tous les enjeux de ce projet nous avons eu besoin d’effectuer plusieurs conférences téléphoniques avec Mr CHODOROWSKI qui ont donné lieu à plusieurs rencontres à l’ENSTA afin d’aborder de façon plus détaillée certains points. Ces rencontres nous ont permis de bien définir le projet dans sa globalité et ainsi pouvoir réaliser un cahier des charges fonctionnel que ce soit pour le robot ou pour la station de recharge.\\
 
 Vous pouvez également retrouver notre projet sur \href{https://github.com/AntoninLize/Projet_OrangeLabs}{GitHub}. Tous les codes Arduino et C++ se trouvent dessus, les liens qui renvoient vers notre code dans la suite du projet pointent tous vers notre GitHub. \\
 
@@ -67,7 +67,7 @@ Vous pouvez également retrouver notre projet sur \href{https://github.com/Anton
 Ce rapport traite du projet en collaboration avec Orange Labs pour la création d’un robot terrestre  autonome. Le produit abouti visé est un véhicule capable de naviguer dans des salles de serveurs de manière autonome afin d’y identifier une éventuelle panne. Ce rapport traite du cheminement suivi. 
 Après avoir dressé le cahier des charges du robot en collaboration avec notre encadrant, nous avons fixé deux objectifs majeurs pour ce projet : la construction d’un drone terrestre fonctionnel et la construction de la station de recharge pour ce drone. \\
 
-Certaines contraintes nous ont poussé à redéfinir nos objectifs : nous sommes arrivés à deux résultats majeurs. Premièrement  une description théorique de la manière de construire le robot et la station de recharge . Deuxièmement l’ensemble des composants sont intégrés et prêts à être utilisés sous ROS. Ces résultats sont satisfaisants et permettrons d’assurer la continuité du projet. \\
+Certaines contraintes nous ont poussés à redéfinir nos objectifs : nous sommes arrivés à deux résultats majeurs. Premièrement une description théorique de la manière de construire le robot et la station de recharge. Deuxièmement l’ensemble des composants sont intégrés et prêts à être utilisés sous ROS. Ces résultats sont satisfaisants et permettront d’assurer la continuité du projet. \\
 
 Ce projet est une opportunité pour nous d’appliquer les connaissances acquises dans de nombreux domaines mais aussi de travailler avec des outils nouveaux pour nous, comme notamment l’utilisation d’un NUC et d’un LIDAR. De plus, la collaboration avec l’entreprise ORANGE LABS fut une occasion de réellement progresser en matière de gestion de projet et de définition d’objectifs.
 \\
@@ -75,12 +75,12 @@ Ce projet est une opportunité pour nous d’appliquer les connaissances acquise
 \subsection{Remerciements}
 La réalisation de ce projet a été possible grâce au concours de plusieurs personnes à qui nous voudrions témoigner toute notre gratitude.\\ 
 
-Nous tenions à exprimer toute notre reconnaissance à notre professeur référant, Monsieur Fabrice LEBARS. Nous le remercions de nous avoir encadré, orienté, aidé et conseillé.\\
+Nous tenions à exprimer toute notre reconnaissance à notre professeur référant, Monsieur Fabrice LEBARS. Nous le remercions de nous avoir encadrés, orientés, aidés et conseillés.\\
 
 Nous adressons nos sincères remerciements à tous les professeurs, intervenants et toutes les personnes qui par leurs paroles, leurs écrits, leurs conseils et leurs critiques ont guidé nos réflexions et ont accepté de nous rencontrer et de répondre à nos questions durant nos recherches.\\
 
 Enfin nous voulions remercier tout particulièrement notre encadrant Mr Jacques\\
-CHODOROWSKI d’Orange Labs à Lannion pour son aide et sa supervision tout au long du projet. Il nous a permis de toujours garder en ligne de mire des objectifs clairs et il a su adapter les modalités du projet au vue du contexte actuel et des contraintes imposées car celui-ci. Ce fut un réel plaisir pour toute notre équipe de travailler en collaboration avec lui. \\
+CHODOROWSKI d’Orange Labs à Lannion pour son aide et sa supervision tout au long du projet. Il nous a permis de toujours garder en ligne de mire des objectifs clairs et il a su adapter les modalités du projet au vu du contexte actuel et des contraintes imposées par celui-ci. Ce fut un réel plaisir pour toute notre équipe de travailler en collaboration avec lui. \\
 
 À tous ces intervenants, nous présentons nos remerciements, notre respect et notre gratitude.\\
 
@@ -107,7 +107,7 @@ Il est important de noter que ces cahiers des charges sont ceux de la version fi
 
 \subsection{Partie robot}
 
-L'objectif général du projet est de construire un robot terrestre capable de naviguer en intérieur de manière totalement autonome. Il doit également être capable d'évoluer sur un terrain plus ou moins accidenté pour s'adapter à l'organisation de certaines fermes de serveurs où les obstacles sont nombreux. Avec notre encadrant, il a été défini que le robot devrait pouvoir évoluer dans des couloirs d'environ 60 cm de largeur. En plus de sa capacité à patrouiller de manière indépendante, le robot doit également être capable de se recharger sans intervention extérieure. La contrainte de vitesse de déplacement,  fixée par l'encadrant du projet, est d'un mètre par seconde. \\
+L'objectif général du projet est de construire un robot terrestre capable de naviguer en intérieur de manière totalement autonome. Il doit également être capable d'évoluer sur un terrain plus ou moins accidenté pour s'adapter à l'organisation de certains data center où les obstacles sont nombreux. Avec notre encadrant, il a été défini que le robot devrait pouvoir évoluer dans des couloirs d'environ 60 cm de largeur. En plus de sa capacité à patrouiller de manière indépendante, le robot doit également être capable de se recharger sans intervention extérieure. La contrainte de vitesse de déplacement,  fixée par l'encadrant du projet, est d'un mètre par seconde. \\
 
 En plus de sa capacité à naviguer de manière totalement autonome, il faut également qu'un technicien puisse contrôler le robot si nécessaire. Il faudra donc prévoir une commande manuelle et un bouton d'arrêt d'urgence en cas de problème. \\
 
@@ -132,12 +132,12 @@ La réalisation du robot présenté ci-dessus en partant de zéro est très ambi
 \end{itemize}   \\ 
 
 
-Cet objectif était réalisable dans le temps imparti, cependant entre la perte de deux personnes travaillant sur le projet (pour cause de départ en substitution en janvier) et la  difficulté majeure liée à la crise du COVID-19, nous avons dû redéfinir nos objectifs. Au moment du confinement il était impossible d'avoir accès à la totalité des composants du robot, donc, en plus de ce qui était déjà réalisé, nous avons décidé que l'objectif du projet serait, à défaut de pourvoir construire le robot, de réaliser un travail théorique le plus précis possible, détaillant le processus de construction et d'intégration, ainsi que les choix techniques. Ce travail permet de constituer une base de travail intéressante pour la suite du projet et permet d'en assurer la continuité.
+Cet objectif était réalisable dans le temps imparti, cependant entre la perte de deux personnes travaillant sur le projet (pour cause de départ en substitution en janvier) et la  difficulté majeure liée à la crise du COVID-19, nous avons dû redéfinir nos objectifs. Au moment du confinement il était impossible d'avoir accès à la totalité des composants du robot, donc, en plus de ce qui était déjà réalisé, nous avons décidé que l'objectif du projet serait, à défaut de pouvoir construire le robot, de réaliser un travail théorique le plus précis possible, détaillant le processus de construction et d'intégration, ainsi que les choix techniques. Ce travail permet de constituer une base de travail intéressante pour la suite du projet et permet d'en assurer la continuité.
 
 \section{Choix techniques pour le Robot}
 \subsection{Architecture globale}
 
-Le cahier des charges nous permet d'identifier les différentes fondions que notre robot doit être capable de réaliser, il nous faut intégrer : 
+Le cahier des charges nous permet d'identifier les différentes fonctions que notre robot doit être capable de réaliser, il nous faut intégrer : 
  \begin{itemize}[label=\textbullet, font=\small\color{blue}]
     \item Un support pour le robot.
     \item Un moyen de propulsion approprié.
@@ -175,15 +175,15 @@ Il est également important de préciser le mode de communication choisi entre c
 
 \subsection{Partie Mécanique : le châssis}
 Très vite nous avons compris que le choix du châssis allait être primordial pour la suite du projet et surtout qu'il devait être effectué assez rapidement. En effet en fonction du châssis choisi, les choix tels que ceux des moteurs, des composants électroniques et des capteurs allaient être impactés. Après discussion avec notre encadrant, deux choix apparaissaient : \begin{itemize}[label=\textbullet, font=\small\color{blue}]
-    \item Le premier était de construire nous même un châssis en le modélisant sur \textit{Autodesk Inventor} et ensuite d'acheter les batteries, les roues et les moteurs;
+    \item Le premier était de construire nous-mêmes un châssis en le modélisant sur \textit{Autodesk Inventor} et ensuite d'acheter les batteries, les roues et les moteurs;
     \item Le second était d'utiliser un châssis tout fait avec les roues et les emplacements moteurs.
 \end{itemize}\\
 
 L’avantage du premier choix était que nous pouvions totalement designer le robot comme nous le souhaitions. Mais l’inconvénient se trouvait au niveau de la robustesse du robot notamment si nous utilisions un système de chenilles. \\
 
-Pour le second, l'avantage était que nous n’avions pas besoin de tenir compte des problèmes de robustesse cependant les dimensions n'étaient pas modulable à notre convenance. \\
+Pour le second, l'avantage était que nous n’avions pas besoin de tenir compte des problèmes de robustesse cependant les dimensions n'étaient pas modulables à notre convenance. \\
 
-Avant de choisir nous avions tenté de modéliser un robot imprimable en 3D ou usinable avec les outils disponible à l'\textit{ENSTA Bretagne}. En voici quelques photos :
+Avant de choisir nous avions tenté de modéliser un robot imprimable en 3D ou usinable avec les outils disponibles à l'\textit{ENSTA Bretagne}. En voici quelques photos :
 
 \begin{figure}[H]
     \centering
@@ -192,9 +192,9 @@ Avant de choisir nous avions tenté de modéliser un robot imprimable en 3D ou u
     \label{fig:cdcf}
 \end{figure}
 
-Finalement nous avons opté pour la solution du châssis à acheter sur internet pour des raisons de précisions au niveau des roues (pour notre modélisation) ou des chenilles (pour le choix final). Notre encadrant préférait également un robot construit à partir de composants sur étagères ou achetés chez des fournisseur de son entreprise.  \\
+Finalement nous avons opté pour la solution du châssis à acheter sur internet pour des raisons de précision au niveau des roues (pour notre modélisation) ou des chenilles (pour le choix final). Notre encadrant préférait également un robot construit à partir de composants sur étagères ou achetés chez des fournisseurs de son entreprise.  \\
 
-Nous avons donc dû faire la prospection des châssis vendus sur internet en faisant attention à la fois au prix, aux options d’achats (moteur inclus ou non) mais surtout par rapport aux dimensions et à la possibilité d’ajouter nos composants facilement.\\ 
+Nous avons donc dû faire la prospection des châssis vendus sur internet en faisant attention à la fois au prix, aux options d’achats (moteur inclus ou non) mais surtout aux dimensions et à la possibilité d’ajouter nos composants facilement.\\ 
 
 Le choix final s’est donc porté sur un châssis robuste et qui rendait l'ajout d'étages possible simplement. Voici l’agent 390 que nous avons décidé de prendre sur \textit{RobotShop} par rapport aux options utiles : 
 
@@ -229,16 +229,16 @@ Sur la base de nos besoins nous avons donc décidé de choisir le moteur suivant
 
 \subsubsection{Choix capteurs}
 
-Les choix qui doivent êtres faits pour les capteurs sont, la caméra, le LIDAR, et les encodeurs. \\
-La caméra à été fournie par notre encadrant, c'est une caméra Realsense T265. Cette caméra est très précise et elle est bien adaptée pour l'optométrie visuelle. Sa facilité d'intégration avec ROS en fait également un excellent choix.\\
-Le choix du LIDAR a été fais grâce aux conseils de Monsieur \textbf{Fabrice LEBARS}. Le choix final est un RPLIDAR A2 de chez Slamteck. Il est approprié pour la détection d'obstacle en intérieur à des distances correspondant aux attendus.\\
+Les choix qui doivent être fait pour les capteurs sont, la caméra, le LIDAR, et les encodeurs. \\
+La caméra a été fournie par notre encadrant, c'est une caméra Realsense T265. Cette caméra est très précise et elle est bien adaptée pour l'optométrie visuelle. Sa facilité d'intégration avec ROS en fait également un excellent choix.\\
+Le choix du LIDAR a été fait grâce aux conseils de Monsieur \textbf{Fabrice LEBARS}. Le choix final est un RPLIDAR A2 de chez Slamteck. Il est approprié pour la détection d'obstacle en intérieur à des distances correspondant aux attendus.\\
 Les encodeurs sont choisis par rapport au moteur, ils sont livrés avec.
 
 
 
 
 \subsubsection{Choix des batteries}
-Afin de permettre l'alimentation de tous nos composants électroniques, nous avons dû choisir une batterie. Tout d'abord de notre propre initiative nous avons décidé de séparer l'alimentation \textit{\textbf{Moteur + Arduino UNO + Motor Shield}} de l'alimentation \textit{\textbf{NUC + Autres Capteurs}}. En effet comme nous avions vu en cours, cela permet d'éviter la sous-alimentation de certains capteurs ou contrôleurs dans le cas ou les moteurs auraient besoin d'un pic de courant.\\
+Afin de permettre l'alimentation de tous nos composants électroniques, nous avons dû choisir une batterie. Tout d'abord de notre propre initiative nous avons décidé de séparer l'alimentation \textit{\textbf{Moteur + Arduino UNO + Motor Shield}} de l'alimentation \textit{\textbf{NUC + Autres Capteurs}}. En effet comme nous avions vu en cours, cela permet d'éviter la sous-alimentation de certains capteurs ou contrôleurs dans le cas où les moteurs auraient besoin d'un pic de courant.\\
 Nous avons également dû tenir compte du Cahier des Charges du robot, qui stipule environ 1h30 d'autonomie.
 
 \\
@@ -251,8 +251,8 @@ Nous avons également dû tenir compte du Cahier des Charges du robot, qui stipu
 \end{figure}
 
 
-Il est à noter que les batterie que nous possédons actuellement ne sont pas les plus appropriées puisqu'il a fallu en brancher deux en série pour obtenir l'ampérage adéquat. Après une étude de la puissance nécessaire au fonctionnement des composants il a été convenu que le choix le plus approprié serait une batterie LiPo 160000 mah (voir  \href{https://www.iplanes-rc.fr/produit/batterie-lipo-22-2-volt-16000mah-25c/}{ici}).
-Il convient simplement de remplacer dans le schéma ci-dessus les deux batterie branchées en série par la batterie LiPo 16000 mah.
+Il est à noter que les batteries que nous possédons actuellement ne sont pas les plus appropriées puisqu'il a fallu en brancher deux en série pour obtenir l'intensité adéquat. Après une étude de la puissance nécessaire au fonctionnement des composants il a été convenu que le choix le plus approprié serait une batterie LiPo 160000 mah (voir  \href{https://www.iplanes-rc.fr/produit/batterie-lipo-22-2-volt-16000mah-25c/}{ici}).
+Il convient simplement de remplacer dans le schéma ci-dessus les deux batteries branchées en série par la batterie LiPo 16000 mah.
 
 \pagebreak
 \section{Choix techniques pour la Station de Recharge}
@@ -263,9 +263,9 @@ Afin de réaliser la station de recharge, nous avons souhaité la modéliser sur
     \item Permettre un contact quasi parfait afin que la station de recharge délivre sa puissance maximale au robot.
 \end{itemize}\\
 
-Pour le premier point, nous avons décidé d'opter pour une forme arrondie qui permettrait donc au robot de pouvoir arriver de travers tout en conservant un contact suffisant avec la station de recharge.\\
+Pour le premier point, nous avons opté pour une forme arrondie qui permettrait donc au robot de pouvoir arriver de travers tout en conservant un contact suffisant avec la station de recharge.\\
 
-Pour le second, nous avons décidé que la station de recharge puisse avoir un degré de liberté. Pour réaliser cela, nous avons inséré une partie à l'avant de la station de recharge qui sera soutenue par un support en dessous mais également par des ressors de compression dans les quatre coins de la pièce. \\
+Pour le second, nous avons décidé que la station de recharge puisse avoir un degré de liberté. Pour réaliser cela, nous avons inséré une partie à l'avant de la station de recharge qui sera soutenue par un support en dessous mais également par des ressorts de compression dans les quatre coins de la pièce. \\
 
 Ces deux choix peuvent s'observer dans les figures ci-dessous :
 
@@ -277,7 +277,7 @@ Ces deux choix peuvent s'observer dans les figures ci-dessous :
 \end{figure}
 Élément de compréhension de la \textit{Figure 1} : Sur l’image \texttt{1} il faut imaginer que lorsque le robot n’est pas en contact avec la station de recharge les parties mobiles de celle-ci reviennent à leur place initiale et forment, comme l’image \texttt{2} le montre, un arc de cercle de même rayon de courbure que la partie fixe.\\
 
-Une fois la conception 3D effectuée, nous avons dû choisir les procédés de fabrication pour chaque pièce. Après consultation des professeurs du \textit{pôle mécanique de l'ENSTA Bretagne}, nous avons convenu que la partie fixe de la station de recharge, qui contient une face incurvée \testit{(élément a)}, ainsi que les éléments rectangulaires permettant l'accroche de la partie contacteur sur le robot \testit{(éléments b)}  seraient imprimés en 3D. Tandis que les parties mobiles de la station de recharge \testit{(éléments c)} et la partie contacteur du robot \testit{(éléments d)} seraient elles usinées dans du PVC afin de gagner du temps, d'obtenir des pièces plus rigides et également de réduire les coûts de fabrication. \\
+Une fois la conception 3D effectuée, nous avons dû choisir les procédés de fabrication pour chaque pièce. Après consultation des professeurs du \textit{pôle mécanique de l'ENSTA Bretagne}, nous avons convenu que la partie fixe de la station de recharge, qui contient une face incurvée \testit{(élément a)}, ainsi que les éléments rectangulaires permettant l'accroche de la partie contacteur sur le robot \testit{(éléments b)} seraient imprimés en 3D. Tandis que les parties mobiles de la station de recharge \testit{(éléments c)} et la partie contacteur du robot \testit{(éléments d)} seraient, elles, usinées dans du PVC afin de gagner du temps, d'obtenir des pièces plus rigides et également de réduire les coûts de fabrication. \\
 
 Pour réaliser les contacteurs, nous avons choisi un plat d'aluminium brut afin de faire circuler le courant à travers. Ce plat de largeur 1cm et d'épaisseur 2mm s'insèrera dans les encoches prévues pour les contacteurs du robot et de la station de recharge. Les tests de conductivité n'ont pas pu être effectués à cause du contexte général sanitaire cependant il paraît important de pouvoir vérifier que la puissance émise par la station de recharge puisse être acheminée jusqu'à la batterie sur le robot. \\
 
@@ -286,7 +286,7 @@ Afin de mieux visualiser la station de recharge, des figures sont à retrouver e
 \subsection{Partie Électronique}
 Le deuxième partie importante se trouve être la partie électronique et électrique de la station de recharge. En effet après avoir réussi l'aspect mécanique du contact entre le robot et sa borne de recharge, nous avons dû réfléchir sur la façon de recharger la batterie \textit{LiPo}, ainsi que de transmettre une puissance nécessaire afin de recharger rapidement le robot et ainsi satisfaire les exigences. \\
 
-Le fait d'utiliser une batterie \textit{LiPo}, complexifie légèrement l'approche de la recharge. En effet dans les chargeurs classiques \textit{LiPo}, il y a un contrôleur qui vérifie et permet la recharge des différentes cellules de la batterie de façon à ne pas l'abîmer mais également à ce que chaque cellule soit chargée correctement. Ce type de chargeur "\textit{intelligent}" nécessite une action humaine qui devait être substituée dans notre cas.\\
+Le fait d'utiliser une batterie \textit{LiPo}, complexifie légèrement l'approche de la recharge. En effet dans les chargeurs classiques \textit{LiPo}, il y a un contrôleur qui vérifie et permet la recharge des différentes cellules de la batterie de façon à ne pas les abîmer mais également de façon à ce que chaque cellule soit chargée correctement. Ce type de chargeur "\textit{intelligent}" nécessite une action humaine qui devait être substituée dans notre cas.\\
 Après recherche de l'existant, nous avons rencontré un composant électronique qui permettait justement de contrôler la charge. Son nom : BMS pour \text{Battery Management System}. Ce composant surveille l'état de différents éléments de la batterie, tels que : \begin{itemize}[label=\textbullet, font=\small\color{blue}]
     \item la tension;
     \item la température;
@@ -306,7 +306,7 @@ Ce BMS s'insère entre l'alimentation qui servira à charger la batterie, et la 
 
 Ces composants permettent une charge de la batterie à \textit{30W} ce qui est suffisant pour un prototype. Afin d'augmenter la puissance de charge il est nécessaire d'identifier le composant limitant qui est ici le \textit{hacheur série} (voir figure ci-dessus). En effet cet élément n'accepte pas un courant supérieur à 3A. Si l'on souhaite donc augmenter la vitesse de recharge il faudra changer ce composant qui a été choisi à la fois pour sa disponibilité et pour son coût relativement faible.\\
 
-Enfin une remarque importante se situe autour de la nécessité d'alimenter le BMS en \textit{12,6V}. En effet nous n'avons trouvé aucune documentation en ligne sur le BMS dont nous avions besoin afin de charger une LiPo 3S. La seule indication qui nous a poussé à utiliser un \textit{hacheur série} se trouve dans une vidéo YouTube montrant la recharge d'une batterie avec le BMS en question (lien \href{https://www.youtube.com/watch?v=ySXtBuawf70}{ici}). Dans une continuité de projet, il serait intéressant de tester avec et sans le \textit{hacheur série}, au vue du faible coût de ce BMS. Un tel test serait intéressant afin de choisir un transformateur délivrant un courant supérieur, afin d'augmenter la puissance reçue par la batterie et ainsi diminuer le temps de charge.
+Enfin une remarque importante se situe autour de la nécessité d'alimenter le BMS en \textit{12,6V}. En effet nous n'avons trouvé aucune documentation en ligne sur le BMS dont nous avions besoin afin de charger une LiPo 3S. La seule indication qui nous a poussés à utiliser un \textit{hacheur série} se trouve dans une vidéo YouTube montrant la recharge d'une batterie avec le BMS en question (lien \href{https://www.youtube.com/watch?v=ySXtBuawf70}{ici}). Dans une continuité de projet, il serait intéressant de tester avec et sans le \textit{hacheur série}, au vue du faible coût de ce BMS. Un tel test serait intéressant afin de choisir un transformateur délivrant un courant supérieur, afin d'augmenter la puissance reçue par la batterie et ainsi de diminuer le temps de charge.
 
 \subsection{Partie Informatique}
 Nous allons maintenant traiter la partie informatique de la Station de Recharge. En effet bien que la charge soit autonome et ne nécessite pas de programmation particulière, le robot doit recevoir les informations suivantes : \begin{itemize}[label=\textbullet, font=\small\color{blue}]
@@ -338,7 +338,7 @@ D'un point de vue mécanique, la station de recharge est opérationnelle sur le 
 \end{itemize} 
 Un premier test avait été effectué en laissant délibérément des petites encoches carrées dans les petites pièces rectangulaires mobile, et cela tenait. Nous n'avons pas pu tester l'accroche sur la partie fixe incurvée.\\
 
-Pour la partie électronique, du fait de la séparation des alimentations moteur et contrôleur, le système et les composants mis en place devront être dupliqués afin que chaque batterie ai son propre BMS associé. Cela ne modifie en rien les contacteurs qui resteront les mêmes, il faudra cependant envisager de choisir un \textit{transformateur} délivrant un courant plus important, et donc envisager de changer de \testit{hacheur série}.\\
+Pour la partie électronique, du fait de la séparation des alimentations moteur et contrôleur, le système et les composants mis en place devront être dupliqués afin que chaque batterie ait son propre BMS associé. Cela ne modifie en rien les contacteurs qui resteront les mêmes, il faudra cependant envisager de choisir un \textit{transformateur} délivrant un courant plus important, et donc envisager de changer de \testit{hacheur série}.\\
 
 Enfin, du côté informatique, il ne restera plus qu'à fournir un code Arduino qui renverra par topics ROS ces informations. Cela ne pouvait se faire qu'en ayant les composants en main propre.
 
@@ -364,7 +364,7 @@ Une fois cette mise au point faite, nous avons commencé par faire fonctionner l
 Le code Arduino qui permet uniquement de lire la valeur des encodeurs se trouve
 \href{https://github.com/AntoninLize/Projet_OrangeLabs/tree/master/Code/Arduino/Encoder}{ici}.\\
 
-Une fois la maîtrise des commandes Arduino pour le moteur et l'encodeur, nous sommes passés sur la partie intégration sous ROS.\\
+Une fois avoir maîtrisé les commandes Arduino pour le moteur et l'encodeur, nous sommes passés sur la partie intégration sous ROS.\\
 
 Pour cela nous avons dû installer ROS sur Arduino. Nous avons donc suivi \href{http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup}{cette procédure} en remplaçant la version de ROS indigo par la version du ROS utilisé. Pour nous ce fut le ROS Melodic. En suivant toutes ces instructions et en relançant Arduino, dans les exemples nous pouvons retrouver des exemples de ROS sous Arduino.\\ 
 
@@ -393,9 +393,9 @@ Une fois ce module installé, il suffit de lancer les nodes avec la commande : \
 \textbf{roslaunch realsense2-camera rs-camera.launch} \\
 
 Les topics publiés qui sont intéressants pour notre projet sont : \begin{itemize}[label=\textbullet, font=\small\color{blue}]
-    \item Les topics image brute
-    \item Le topic IMU
-    \item Le topic odométrie 
+    \item Les topics image brute,
+    \item Le topic IMU,
+    \item Le topic odométrie. 
 \end{itemize}
 
 
@@ -403,7 +403,7 @@ Les topics publiés qui sont intéressants pour notre projet sont : \begin{itemi
 \subsection{RP Lidar}
 Le LIDAR que nous utilisons est un RPLIDAR A2 de chez Slamtech, l'ensemble des SDK nécessaires à l'utilisation de ce LIDAR sont fournis par le constructeur(lien \href{https://www.slamtec.com/en/Support#rplidar-a-series}{ici}) \\
 
-Pour l'installation, il faut tout d'abord installer le module permettant de faire fonctionner le LIDAR puis le module permettant le lancement avec ROS (et donc la visualisation avec rviz). Une fois ces packages installés, on peut utiliser le LIDAR et avoir accès au topic classique \textbf{scan}. \\
+Pour l'installation, il faut tout d'abord installer le module permettant de faire fonctionner le LIDAR puis le module permettant le lancement avec ROS (et donc la visualisation avec RVIZ). Une fois ces packages installés, on peut utiliser le LIDAR et avoir accès au topic classique \textbf{scan}. \\
 \\
 
 
@@ -427,31 +427,31 @@ Pour l'installation, il faut tout d'abord installer le module permettant de fair
 
 
 \vspace{3mm}
-\caption{Visualisation avec rviz}
+\caption{Visualisation avec RVIZ}
 \label{fig:archi elec}
 \end{figure}
 
 
-Touts les fichiers contenant les drivers sont à retrouver sur le Git du projet. Le node-graph est quant à lui à retrouver en page \pageref{annexe5}.
+Touts les fichiers contenant les drivers sont à retrouver sur le Git du projet. Le node-graph est, quant à lui, à retrouver en page \pageref{annexe5}.
 
 \section{Résultats et continuité}
-Dans cette ultime partie, nous allons traiter des résultats et de l'avancement général du projet. Nous parlerons également des possibilités de suite et de la continuité des différentes tâches. Pour cela nous allons diviser la suite en deux paragraphes : le premier pour parler du robot et le second pour la station de recharge.\\
+Dans cette ultime partie, nous allons traiter des résultats et de l'avancement général du projet. Nous parlerons également des possibilités de suite et de la continuité des différentes tâches. Pour cela, nous allons diviser la suite en deux paragraphes : le premier pour parler du robot et le second pour la station de recharge.\\
 
-Concernant le robot, l'installation sur le robot des capteurs tels que le Lidar ou la caméra Realsens n'ont pas pu être fait puisque nous n'avions plus le robot sous la main depuis début Mars. Concernant les intégrations sous ROS du NUC, du Lidar et de la caméra, elles sont opérationnelles et ne nécessitent qu'un code qui gère la navigation. L'aspect alimentation a été traité antérieurement, il devra être tout de même testé en situation réelle. Le mât a été délibérément abandonné dans le contexte actuel mais avec une éventuelle reprise de projet, ceci redeviendra un critère important. Concernant le châssis, celui-ci permet d'accueillir tous les capteurs et installations souhaités. L'intégration des moteurs et encodeurs a été effectué. Il reste cependant à coder un programme permettant de contrôler la vitesse et la trajectoire du robot.\\
+Concernant le robot, l'installation sur le robot des capteurs tels que le Lidar ou la caméra Realsens n'ont pas pu être fait puisque nous n'avions plus le robot sous la main depuis début Mars. Concernant les intégrations sous ROS du NUC, du Lidar et de la caméra, elles sont opérationnelles et ne nécessitent qu'un code qui gère la navigation. L'alimentation a été traité antérieurement, elle devra être tout de même testée en situation réelle. Le mât a été délibérément abandonné dans le contexte actuel mais avec une éventuelle reprise de projet, ceci redeviendra un critère important. Concernant le châssis, celui-ci permet d'accueillir tous les capteurs et installations souhaités. Les intégrations des moteurs et encodeurs a été effectuées. Il reste cependant à coder un programme permettant de contrôler la vitesse et la trajectoire du robot.\\
 
-Concernant la station de recharge, nous n'allons pas nous attarder dessus. Vous pouvez retrouver page \pageref{station} l'état d'avancement de la station, les tâches à réaliser et les possibles améliorations envisagées. Pour résumer, toute la partie théorique a été effectué. Il reste l'aspect pratique et le test des solutions envisagées.
+Concernant la station de recharge, nous n'allons pas nous attarder dessus. Vous pouvez retrouver page \pageref{station} l'état d'avancement de la station, les tâches à réaliser et les possibles améliorations envisagées. Pour résumer, toute la partie théorique a été effectuée. Il reste l'aspect pratique et le test des solutions envisagées.
 
 
 
 \section{Conclusion}
 
-Afin de conclure ce rapport mais également ce projet nous tenions à remercier de nouveau Monsieur CHODOROWSKI qui nous a donné l'opportunité et les moyens de travailler sur ce beau défi. \\
+Afin de conclure ce rapport mais également ce projet, nous tenions à remercier de nouveau Monsieur CHODOROWSKI qui nous a donné l'opportunité et les moyens de travailler sur ce beau défi. \\
 
-Les premiers objectifs fixés ont certes été revu à la baisse, néanmoins les leçons apprises tout au long de ce travail sont très nombreuses. Nous n'allons pas dresser la liste de chacune cependant au delà de l'aspect théorique et pratique en robotique, nous avons acquis tout au long de ce projet des compétences de gestion et de suivis de projet. Les rencontres et les discussions hebdomadaires avec notre encadrant, les libertés de décisions qu'il nous a offert, la répartition du travail entre nous mais aussi de façon temporel, tout ceci nous a permis de mieux découvrir le travail d'un ingénieur en relation avec une entreprise commanditaire d'un robot. \\
+Les premiers objectifs fixés ont, certes, été revus à la baisse, néanmoins les leçons apprises tout au long de ce travail sont très nombreuses. Nous n'allons pas dresser la liste de chacune, cependant au delà de l'aspect théorique et pratique en robotique, nous avons acquis tout au long de ce projet des compétences de gestion et de suivi de projet. Les rencontres et les discussions hebdomadaires avec notre encadrant, les libertés de décisions qu'il nous a offertes, la répartition du travail entre nous, tout ceci nous a permis de mieux découvrir le travail d'un ingénieur en relation avec une entreprise commanditaire d'un robot. \\
 
 Ce projet professionnalisant nous servira à coup sûr dans nos expériences futures, que ce soit en stage ou dans notre futur métier. \\
 
-Pour conclure, notre travail de présentation, d'explication et de synthèse à pour vocation la continuité de ce projet. Nous espérons qu'avec toutes nos recherches et nos travaux, ce projet ambitieux puisse arriver à son terme. Nous sommes heureux d'avoir pu ajouter notre contribution.
+Pour conclure, notre travail de présentation, d'explication et de synthèse a pour vocation la continuité de ce projet. Nous espérons qu'avec toutes nos recherches et nos travaux, ce projet ambitieux pourra arriver à son terme. Nous sommes heureux d'avoir pu y ajouter notre contribution.
 
 \pagebreak
 \listoffigures
@@ -527,7 +527,7 @@ Le code Arduino qui permet de commander le moteur en envoyant une commande entre
 
 C'est à partir de l'exemple \textit{pubsub} que nous avons construit le code permettant de lire la commande sur un topic et de publier sur un autre les valeurs encodeurs. Pour le code \href{https://github.com/AntoninLize/Projet_OrangeLabs/tree/master/Code/Arduino/pubsub}{suivre ce lien}. Le code en lui même est relativement simple, cependant le ROS sous Arduino est très légèrement différent que sous C++ et quelques problèmes sont apparus comme par exemple le fait de devoir utiliser un \textit{char *} afin de récupérer les valeurs de commandes moteurs.\\
 
-Pour le moment le code ne reçoit et n'envoie que des topics de type String, dans les besoins du projet il faudra utiliser des messages déjà implémenter comme par exemple un message de type \href{http://docs.ros.org/api/geometry_msgs/html/msg/Twist.html}{Twist}.\\
+Pour le moment le code ne reçoit et n'envoie que des topics de type String, dans les besoins du projet il faudra utiliser des messages déjà implémentés comme par exemple un message de type \href{http://docs.ros.org/api/geometry_msgs/html/msg/Twist.html}{Twist}.\\
 
 Enfin afin de publier les topics de commande, nous avons implémenté un code que l'on peut retrouver dans un workspace ROS sur notre GitHub. Les codes sont dans le dossier /src qui contient deux codes en C++ : 
 \begin{itemize}[label=\textbullet, font=\small\color{blue}]
@@ -537,11 +537,11 @@ Enfin afin de publier les topics de commande, nous avons implémenté un code qu
 
 \subsubsection{Problèmes rencontrés}
 
-L'un des principaux problème fut au moment de publier la valeur de l'encodeur. En effet avec les premières versions nous pouvions lire sur le topic "value encoder" des valeurs qui ne correspondait pas aux valeurs attendues. En effet nous avions environ 50 ticks par tour alors que la documentation moteur indiquait 322 ticks par tour et que nous avions déjà testé l'encodeur uniquement avec Arduino et les valeurs étaient cohérentes.\\ 
+L'un des principaux problème fut au moment de publier la valeur de l'encodeur. En effet avec les premières versions nous pouvions lire sur le topic "value encoder" des valeurs qui ne correspondaient pas aux valeurs attendues. En effet nous avions environ 50 ticks par tour alors que la documentation moteur indiquait 322 ticks par tour et que nous avions déjà testé l'encodeur uniquement avec Arduino et les valeurs étaient cohérentes.\\ 
 
-Après recherche nous avons réaliser que la fréquence à laquelle nous parcourions la boucle loop() du programme Arduino n'était pas suffisante par rapport à la fréquence de rotation du moteur. Autrement dit, nous ne lisions qu'une valeur encodeurs sur six. Pour comprendre d'où venait le problème, nous avons dû regarder combien de cycles d'horloges durait chaque commande dans le loop(). Les résultats de ces tests sont en commentaires du programme Arduino "pubsub.ino". Nous avons constaté que ce qui prenait le plus de temps était la conversion en \textit{char *} ainsi que la publication du topic \textit{"value encoder"} et de la commande "\textit{spinOnce()}.\\
+Après recherche nous avons réalisé que la fréquence à laquelle nous parcourions la boucle loop() du programme Arduino n'était pas suffisante par rapport à la fréquence de rotation du moteur. Autrement dit, nous ne lisions qu'une valeur encodeur sur six. Pour comprendre d'où venait le problème, nous avons dû regarder combien de cycles d'horloge durait chaque commande dans le loop(). Les résultats de ces tests sont en commentaires du programme Arduino "pubsub.ino". Nous avons constaté que ce qui prenait le plus de temps était la conversion en \textit{char *} ainsi que la publication du topic \textit{"value encoder"} et de la commande "\textit{spinOnce()}.\\
 
-Afin d'y remédier, nous avons choisi de ne publier la valeur du topic \textit{"value encoder"} que toutes les 100 passages de boucle loop(). Ceci nous a permis de pouvoir lire la valeur encoder à chaque loop() de façon plus rapide et ainsi éviter de sauter des valeurs encodeurs, tout en publiant assez régulièrement afin d'afficher tous les changements de ticks.
+Afin d'y remédier, nous avons choisi de ne publier la valeur du topic \textit{"value encoder"} que toutes les 100 passages de boucle loop(). Ceci nous a permis de pouvoir lire la valeur encodeur à chaque loop() de façon plus rapide et ainsi éviter de sauter des valeurs encodeurs, tout en publiant assez régulièrement afin d'afficher tous les changements de ticks.
 
 \subsection{Annexe 5 : Node graph } \label{annexe5}
 

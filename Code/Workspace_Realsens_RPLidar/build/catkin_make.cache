@@ -1,0 +1,2 @@
+realsense-ros/realsense2_camera:realsense-ros/realsense2_description:rplidar_ros
+-DCATKIN_DEVEL_PREFIX=/home/orange/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/orange/catkin_ws/install -G Unix Makefiles

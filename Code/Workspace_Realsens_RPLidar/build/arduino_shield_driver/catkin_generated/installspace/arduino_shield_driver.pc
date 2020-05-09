@@ -1,0 +1,8 @@
+prefix=/home/orange/catkin_ws/install
+
+Name: arduino_shield_driver
+Description: Description of arduino_shield_driver
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
